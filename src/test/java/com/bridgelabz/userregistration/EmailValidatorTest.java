@@ -28,10 +28,9 @@ public class EmailValidatorTest {
     public static Collection data(){
         return Arrays.asList(new Object[][] {
                 {"vivekhaarit@gmail.com",true},
-                {"adfgsdgfdgg@gmail.com",true}
+                {"adfgsdgfdgg@gmail.com",true},
         });
     }
-
     @Test
     public void emailTest() {
         Assert.assertEquals(expectedResult,validate.emailValidation(email));
